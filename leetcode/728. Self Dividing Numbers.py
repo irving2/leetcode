@@ -19,3 +19,4 @@ class Solution:
             if flag==1:
                 ans.append(num)
         return ans
+
