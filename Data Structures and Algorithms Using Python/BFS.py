@@ -29,5 +29,30 @@ def is_needed(name):
 
 
 if __name__ == '__main__':
-    pass
 
+    from time import time
+
+      #
+      # def logger(level):
+      #     def wrapper(func):
+      #         def innner_wrapper(*args,**kwargs):
+      #             print('innner_warpper loggerlelvel,',level)
+      #             print('in innner_wrapper:',time())
+      #             return func(*args,**kwargs)
+      #         return innner_wrapper
+      #     return wrapper
+      #
+      # @logger(level='high')
+      # def foo(x):
+      #     print('in foo print:',x)
+  #
+  # foo('111')
+
+
+    import tensorflow as tf
+    import tensorflow.contrib.eager as tfe
+
+    tfe.enable_eager_execution()
+    res = tf.cos([0.1,90.1])
+    with tf.Session() as sess:
+        print(type(sess.run(res)))

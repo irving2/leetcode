@@ -14,10 +14,10 @@ def binary_search(item,num_list):
         elif guess < item:
             low = mid+1
         else:
-            high = high-1
+            high = mid-1
     return None
 
 if __name__ == '__main__':
     L = [1,3,5,7,9,22]
-    print binary_search(7,L)
+    print (binary_search(7,L))
 

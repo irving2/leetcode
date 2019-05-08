@@ -12,7 +12,6 @@ def recurrent_sum(arr):
         return arr[0]+recurrent_sum(arr[1:])
 
 
-
 def quick_sort(arr):
     # 基线条件
     if len(arr)<=1:
@@ -25,6 +24,6 @@ def quick_sort(arr):
 
 
 if __name__ == '__main__':
-    d = {}
-    print d.setdefault('a','Not found!')
-    print 'd:',d
+    d = {'a':11}
+    print (d.get('a','Not found!'))
+    print ('d:',d)
