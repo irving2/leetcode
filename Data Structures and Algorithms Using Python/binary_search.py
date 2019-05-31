@@ -20,4 +20,3 @@ def binary_search(item,num_list):
 if __name__ == '__main__':
     L = [1,3,5,7,9,22]
     print (binary_search(7,L))
-

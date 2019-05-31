@@ -31,14 +31,3 @@ class Solution(object):
         sq_1 = findleaf(root1)
         sq_2 = findleaf(root2)
         return sq_1==sq_2
-
-
-
-
-
-
-
-
-
-
-

@@ -15,4 +15,3 @@ class Solution(object):
         for word in s.split():
             l.append(word[::-1])
         return ' '.join(l)
-
