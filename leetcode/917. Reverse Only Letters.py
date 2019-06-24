@@ -16,13 +16,3 @@ class Solution(object):
         """
         letter = [alpha for alpha in S if alpha.isalpha()]
         return ''.join(x if not x.isalpha() else letter.pop() for x in S )
-
-
-
-
-
-
-
-
-
-
